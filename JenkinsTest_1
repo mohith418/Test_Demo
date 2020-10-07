@@ -8,7 +8,7 @@ node('master') {
   }
   
  stage('Test') {
-  bat '"C:\\Program Files\\SmartBear\\ReadyAPI-3.3.2\\bin\\testrunner.bat" -sIP_TestSuite -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" F:\\Country\\Test_Demo\\IP-readyapi-project.xml'
+  bat '"C:\\Program Files\\SmartBear\\ReadyAPI-3.3.2\\bin\\testrunner.bat" -sIP_TestSuite -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" F:\\Country\\Test\\Test_Demo\\IP-readyapi-project.xml'
   }
  
   stage('Deploy') {
